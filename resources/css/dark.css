@@ -1,0 +1,256 @@
+body.dark-mode {
+    &,
+    & .custom-scrollbar::-webkit-scrollbar-thumb,
+    & .custom-scrollbar::-webkit-scrollbar-thumb:hover,
+    & .header-bar,
+    & .footer-bar,
+    & .header-bar a,
+    & .footer-bar a {
+        background-color: var(--color-dark-light) !important;
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .sidebar,
+    & .mobile-menu {
+        background: var(--gradient-dark) !important;
+    }
+
+    & .sidebar,
+    & .sidebar .nav-item .nav-link,
+    & .sidebar .nav-item button.nav-link,
+    & .fancy-nav-link,
+    & .fancy-nav-link:hover,
+    & .fancy-nav-link.active,
+    & .nav-icon {
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .custom-scrollbar::-webkit-scrollbar-track,
+    & .card,
+    & .card a,
+    & .card-header,
+    & .card-footer,
+    & .card-body,
+    & .table,
+    & .table a,
+    & .table th,
+    & .table td,
+    & .table thead th,
+    & .table tbody tr,
+    & .table div,
+    & .main-body .btn,
+    & .dropdown-menu,
+    & .dropdown-item,
+    & .form-control,
+    & .form-select,
+    & .form-check-input,
+    & .form-check-label,
+    & .form-check,
+    & .form-check-inline,
+    & .form-label,
+    & .form-text,
+    & .form-floating,
+    & .form-group,
+    & .form-row,
+    & .form-inline,
+    & .form-control:focus,
+    & .form-select:focus,
+    & .form-check-input:focus,
+    & .form-check-label:focus,
+    & .form-check:focus-within,
+    & .form-check-inline:focus-within,
+    & .form-label:focus-within,
+    & .form-text:focus-within,
+    & .form-floating:focus-within,
+    & .form-group:focus-within,
+    & .form-row:focus-within,
+    & .form-inline:focus-within,
+    & .input-group,
+    & .input-group-text,
+    & .input-group-prepend,
+    & .input-group-append,
+    & .input-group input,
+    & .input-group select,
+    & .input-group textarea,
+    & .input-group .form-control,
+    & .input-group .form-select,
+    & .input-group .form-check-input,
+    & .input-group .form-check-label,
+    & .input-group .form-check,
+    & .input-group .form-check-inline,
+    & .input-group .form-label,
+    & .input-group .form-text,
+    & .input-group .form-floating,
+    & .input-group .form-group,
+    & .input-group .form-row,
+    & .input-group .form-inline,
+    & .input-group .form-control:focus,
+    & .input-group .form-select:focus,
+    & .input-group .form-check-input:focus,
+    & .input-group .form-check-label:focus,
+    & .input-group .form-check:focus-within,
+    & .input-group .form-check-inline:focus-within,
+    & .form-control::placeholder,
+    & .form-select::placeholder,
+    & .form-check-input::placeholder,
+    & .form-check-label::placeholder,
+    & .form-check::placeholder,
+    & .form-check-inline::placeholder,
+    & .form-label::placeholder,
+    & .form-text::placeholder,
+    & .form-floating::placeholder,
+    & .list-group,
+    & .list-group-item,
+    & .modal-content {
+        background-color: var(--color-dark) !important;
+        color: var(--color-muted-gray) !important;
+        border-color: var(--color-muted-gray) !important;
+    }
+
+    & .card,
+    & .card a,
+    & .card-header,
+    & .card-footer,
+    & .card-bodym {
+        border: none !important;
+    }
+
+    & .app-header {
+        border-bottom: 1px dotted var(--color-muted-gray) !important;
+
+        &,
+        & a,
+        & .nav-link,
+        & .nav-link:hover,
+        & .nav-link.active {
+            background: var(--color-dark) !important;
+            color: var(--color-muted-gray) !important;
+        }
+    }
+
+    & .navbar,
+    & .navbar a,
+    & .navbar .nav-link,
+    & .navbar .nav-link:hover,
+    & .navbar .nav-link.active {
+        background: var(--color-dark) !important;
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .offcanvas {
+        background: var(--color-dark) !important;
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .data-card-value,
+    & .data-card-label,
+    & .data-card-description {
+        color: var(--color-muted-gray);
+    }
+
+    & .section-subtitle,
+    & .section-title,
+    & .section-header {
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .divider {
+        background: var(--color-muted-gray) !important;
+    }
+
+    & .main-background,
+    & .main-background-2 {
+        background-color: var(--color-dark) !important;
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .app-footer {
+        background: var(--gradient-dark) !important;
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .pricing-section {
+        background: var(--color-dark-light) !important;
+    }
+
+    & .feature-card {
+        background: var(--color-dark) !important;
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .feature-title {
+        color: var(--color-white) !important;
+    }
+
+    & .system-icon {
+        background: var(--color-dark) !important;
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .sms-hero-section .section-badge {
+        background: var(--color-dark-light) !important;
+    }
+
+    & .sms-hero-section .section-title {
+        color: var(--color-white) !important;
+    }
+
+    & .alert {
+        background-color: var(--color-dark-light) !important;
+        color: var(--color-muted-gray) !important;
+        border-color: var(--color-muted-gray) !important;
+    }
+
+    & .alert a {
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .alert .alert-link {
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .text-muted {
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .dashed-hr {
+        border-bottom: 2px dotted var(--color-muted-gray) !important;
+    }
+
+    & .user-account-info {
+        background: var(--color-dark-light) !important;
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .nav-tabs {
+        background: var(--color-dark-light) !important;
+        border-color: var(--color-dark) !important;
+        padding: 0.5rem 0.5rem 0 0.5rem !important;
+    }
+
+    & .nav-tabs .nav-link {
+        background: var(--color-dark-light) !important;
+        color: var(--color-muted-gray) !important;
+    }
+
+    & .nav-tabs .nav-link.active {
+        background: var(--color-dark) !important;
+        color: var(--color-muted-gray) !important;
+        border-color: var(--color-muted-gray) !important;
+    }
+
+    & a.btn {
+        border: 1px solid var(--color-muted-gray) !important;
+        text-decoration: none;
+    }
+
+    & .bg-custom-2 {
+        background: var(--color-dark-light) !important;
+    }
+
+    & .modal-header,
+    & .modal-footer {
+        background: var(--color-dark);
+        color: var(--color-white);
+    }
+}

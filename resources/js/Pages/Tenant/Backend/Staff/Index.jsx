@@ -1,0 +1,87 @@
+import { Head, Link } from "@inertiajs/react";
+import { useEffect, useCallback } from "react";
+import { Row, Col, Card, ButtonGroup, Table } from "react-bootstrap";
+import { FaPlus } from "react-icons/fa";
+import { motion } from "framer-motion";
+
+import AuthenticatedLayout from "@/Layouts/PortalLayout";
+
+export default function StaffIndex() {
+    const initializeDataTable = useCallback(() => {
+        if ($.fn.DataTable.isDataTable("#staffTable")) {
+            $("#staffTable").DataTable().destroy();
+        }
+
+        $("#staffTable").DataTable({
+            processing: true,
+            serverSide: true,
+            ajax: {
+                url: route("admin.staff.index"),
+                type: "GET",
+            },
+            columns: [
+                { data: "full_name", title: "Name", className: "text-capitalize" },
+                { data: "email", title: "Email" },
+                { data: "phone", title: "Phone", className: "text-capitalize" },
+                { data: "roles", title: "Roles", className: "text-capitalize" },
+                { data: "status", title: "Status" },
+                { data: "action", title: "Action", className: "text-end" },
+            ],
+            order: [[0, "desc"]],
+        });
+    }, []);
+
+    useEffect(() => {
+        initializeDataTable();
+        return () => {
+            if ($.fn.DataTable.isDataTable("#staffTable")) {
+                $("#staffTable").DataTable().destroy();
+            }
+        };
+    }, [initializeDataTable]);
+
+    return (
+        <AuthenticatedLayout>
+            <Head title="Staff List" />
+
+            {/* Header with quick actions */}
+            <div className="d-flex justify-content-between align-items-center mb-3">
+                <h1 className="h3 mb-0">Teaching Staff</h1>
+                <ButtonGroup className="gap-2">
+                    <Link
+                        href={route("admin.staff.create")}
+                        className="btn btn-outline-custom rounded"
+                    >
+                        <FaPlus className="me-2" />
+                        New Staff
+                    </Link>
+                </ButtonGroup>
+            </div>
+
+            <hr className="dashed-hr" />
+
+            <Row>
+                <Col>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.4 }}
+                    >
+                        <Card className="border-0 shadow-sm">
+                            <Card.Body>
+                                <Table
+                                    bordered
+                                    striped
+                                    hover
+                                    responsive
+                                    id="staffTable"
+                                    className="w-100"
+                                />
+                            </Card.Body>
+                        </Card>
+                    </motion.div>
+                </Col>
+            </Row>
+        </AuthenticatedLayout>
+    );
+}

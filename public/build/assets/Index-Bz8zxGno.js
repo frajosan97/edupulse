@@ -1,0 +1,1 @@
+import{j as t,a as r}from"./app-bV1oKjKy.js";import{P as o}from"./PortalLayout-u-5QNYDI.js";import"./useData-Bpd0XriX.js";import"./warning-DViRBwvh.js";import"./CloseButton-BYbBlkTD.js";function n(){return t.jsx(o,{children:t.jsx(r,{title:"Setting"})})}export{n as default};

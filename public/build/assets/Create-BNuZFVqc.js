@@ -1,0 +1,1 @@
+import{j as t,a as r}from"./app-bV1oKjKy.js";import{P as e}from"./PortalLayout-u-5QNYDI.js";import"./useData-Bpd0XriX.js";import"./warning-DViRBwvh.js";import"./CloseButton-BYbBlkTD.js";function n(){return t.jsx(e,{children:t.jsx(r,{title:"Create Payment"})})}export{n as default};

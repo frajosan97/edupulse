@@ -1,0 +1,1 @@
+<img src="{{ $row->image_url }}" alt="" srcset="" class="img-thumbnail" style="max-width: 50px;">
