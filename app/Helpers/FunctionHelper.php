@@ -16,7 +16,11 @@ if (!function_exists('getDomain')) {
         $host = request()->getHost() ?? '';
 
         // Remove port number, www., and app. prefixes
-        $host = preg_replace(['/:\d+$/', '/^www\./', '/^app\./'], '', $host);
+        $host = preg_replace(
+            ['/:\d+$/', '/^www\./', '/^app\./'],
+            '',
+            $host
+        );
 
         return $host;
     }
@@ -31,7 +35,11 @@ if (!function_exists('isLandlord')) {
     function isLandlord(): bool
     {
         $landlordDomains = config('tenancy.central_domains');
-        return in_array(getDomain(), $landlordDomains, true);
+        return in_array(
+            getDomain(),
+            $landlordDomains,
+            true
+        );
     }
 }
 
@@ -54,7 +62,11 @@ if (!function_exists('menuType')) {
             'alumni',
         ];
 
-        $requestType = in_array($accessMode, $rolesToCheck, true) ? $accessMode : 'main';
+        $requestType = in_array(
+            $accessMode,
+            $rolesToCheck,
+            true
+        ) ? $accessMode : 'main';
 
         return (isLandlord() ? 'landlord' : 'tenant') . '-' . $requestType;
     }
