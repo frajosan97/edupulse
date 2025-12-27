@@ -1,1 +1,0 @@
-import{j as t,a as o}from"./app-bV1oKjKy.js";import{P as r}from"./PortalLayout-u-5QNYDI.js";import"./useData-Bpd0XriX.js";import"./warning-DViRBwvh.js";import"./CloseButton-BYbBlkTD.js";function p(){return t.jsx(r,{children:t.jsx(o,{title:"Show Message"})})}export{p as default};

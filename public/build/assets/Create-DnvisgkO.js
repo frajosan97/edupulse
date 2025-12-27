@@ -1,1 +1,0 @@
-import{j as t,a as e}from"./app-bV1oKjKy.js";import{P as r}from"./PortalLayout-u-5QNYDI.js";import"./useData-Bpd0XriX.js";import"./warning-DViRBwvh.js";import"./CloseButton-BYbBlkTD.js";function p(){return t.jsx(r,{children:t.jsx(e,{title:"Create Message"})})}export{p as default};

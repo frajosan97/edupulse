@@ -1,0 +1,1 @@
+import{j as t,a as e}from"./app-CiDaUcey.js";import{P as r}from"./PortalLayout-CxqdbcvG.js";import"./useData-CInDpAgI.js";import"./warning-CDyBO85i.js";import"./CloseButton-uf0rwOsm.js";function p(){return t.jsx(r,{children:t.jsx(e,{title:"Create Message"})})}export{p as default};

@@ -1,6 +1,3 @@
-import { Head, usePage } from "@inertiajs/react";
-import { FaChalkboardTeacher, FaUserGraduate, FaAward } from "react-icons/fa";
-
 import AppLayout from "@/Layouts/AppLayout";
 import HeroSlider from "@/Components/Pages/HeroSlider";
 import DataCard from "@/Components/Pages/DataCard";
@@ -8,24 +5,28 @@ import WelcomeSection from "@/Components/Pages/WelcomeSection";
 import InfoSection from "@/Components/Pages/InfoSection";
 import TestimonialsSection from "@/Components/Pages/TestimonialsSection";
 
+import { Head, usePage } from "@inertiajs/react";
+
 export default function Home() {
+    const { tenant } = usePage().props;
+
     return (
         <AppLayout>
-            <Head title="Home | Katheka Boys Secondary School" />
+            <Head title={tenant ? tenant.name : "Home"} />
 
-            {/* Hero Slider - Showcases key school highlights */}
+            {/* Hero Slider */}
             <HeroSlider />
 
-            {/* Statistics Cards - School achievements at a glance */}
+            {/* Platform Statistics */}
             <DataCard />
 
-            {/* Welcome Section - School introduction */}
+            {/* Welcome/About Section */}
             <WelcomeSection />
 
-            {/* Info Section - Parent portal information */}
+            {/* Feature Highlight */}
             <InfoSection />
 
-            {/* Testimonials - Stakeholder feedback */}
+            {/* Testimonials */}
             <TestimonialsSection />
         </AppLayout>
     );

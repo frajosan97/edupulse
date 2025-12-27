@@ -1,0 +1,1 @@
+import{j as t,a as o}from"./app-CiDaUcey.js";import{P as r}from"./PortalLayout-CxqdbcvG.js";import"./useData-CInDpAgI.js";import"./warning-CDyBO85i.js";import"./CloseButton-uf0rwOsm.js";function n({school:a}){return t.jsx(r,{children:t.jsx(o,{title:"Backup Management"})})}export{n as default};

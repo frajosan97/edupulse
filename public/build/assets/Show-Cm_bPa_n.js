@@ -1,1 +1,0 @@
-import{j as o,a as t}from"./app-bV1oKjKy.js";import{P as r}from"./PortalLayout-u-5QNYDI.js";import"./useData-Bpd0XriX.js";import"./warning-DViRBwvh.js";import"./CloseButton-BYbBlkTD.js";function n(){return o.jsx(r,{children:o.jsx(t,{title:"Show Invoice"})})}export{n as default};

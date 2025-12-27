@@ -1,0 +1,1 @@
+import{j as t,a as o}from"./app-CiDaUcey.js";import{P as i}from"./PortalLayout-CxqdbcvG.js";import"./useData-CInDpAgI.js";import"./warning-CDyBO85i.js";import"./CloseButton-uf0rwOsm.js";function n(){return t.jsx(i,{children:t.jsx(o,{title:"Edit Invoice"})})}export{n as default};

@@ -6,7 +6,7 @@ export default function useData() {
     /* ------------------------------------------------------------------
      | Page Props
      * ------------------------------------------------------------------ */
-    const { is_landlord, menuType: propMenuType } = usePage().props;
+    const { tenant, menuType: propMenuType } = usePage().props;
 
     /* ------------------------------------------------------------------
      | State
@@ -23,8 +23,8 @@ export default function useData() {
         (override = null) =>
             override ||
             propMenuType ||
-            (is_landlord ? "landlord-main" : "tenant-main"),
-        [propMenuType, is_landlord]
+            (tenant ? "tenant-main" : "landlord-main"),
+        [propMenuType, tenant]
     );
 
     /* ------------------------------------------------------------------

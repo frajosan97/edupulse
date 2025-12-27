@@ -35,6 +35,7 @@ if (!function_exists('isLandlord')) {
     function isLandlord(): bool
     {
         $landlordDomains = config('tenancy.central_domains');
+        
         return in_array(
             getDomain(),
             $landlordDomains,

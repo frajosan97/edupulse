@@ -34,7 +34,6 @@ class HandleInertiaRequests extends Middleware
             'systemEnv' => config('app.env'),
             'accessMode' => accessMode(),
             'menuType' => menuType(),
-            'is_landlord' => isLandlord(),
             'tenant' => $tenant,
             'tenantInfo' => $tenant ? [
                 'contacts' => SchoolContact::where('is_active', true)->latest()->get(),

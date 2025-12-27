@@ -1,0 +1,1 @@
+import{j as r,a as t}from"./app-CiDaUcey.js";import{P as o}from"./PortalLayout-CxqdbcvG.js";import"./useData-CInDpAgI.js";import"./warning-CDyBO85i.js";import"./CloseButton-uf0rwOsm.js";const p=()=>r.jsx(o,{children:r.jsx(t,{title:"Dashboard"})});export{p as default};
