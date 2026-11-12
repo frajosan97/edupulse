@@ -1,0 +1,1 @@
+import{n as e,t}from"./jsx-runtime-BCsgYAav.js";import{t as n}from"./module-form-BlDS8SIn.js";var r=e(),i=t();function a(){let e=(0,r.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,i.jsx)(n,{mode:`create`}),e[0]=t):t=e[0],t}a.layout={breadcrumbs:[{title:`Modules`,href:`/modules`},{title:`Create`,href:`/modules/create`}]};export{a as default};

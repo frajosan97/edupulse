@@ -1,0 +1,1 @@
+import{n as e,t}from"./jsx-runtime-BCsgYAav.js";import{t as n}from"./module-form-BlDS8SIn.js";var r=e(),i=t();function a(e){let t=(0,r.c)(2),{module:a}=e,o;return t[0]===a?o=t[1]:(o=(0,i.jsx)(n,{mode:`edit`,module:a}),t[0]=a,t[1]=o),o}a.layout=e=>({breadcrumbs:[{title:`Modules`,href:`/modules`},{title:e.module?.name??`Module`,href:`/modules/edit`}]});export{a as default};

@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BCsgYAav.js";import{t}from"./invoices-EevPdcEa.js";var n=e();function r({tenants:e=[],defaultTenantId:r}){return(0,n.jsx)(t,{mode:`create`,tenants:e,defaultTenantId:r})}r.layout={breadcrumbs:[{title:`Invoices`,href:`/invoices`},{title:`Create`,href:`/invoices/create`}]};export{r as default};

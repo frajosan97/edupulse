@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BCsgYAav.js";import{t}from"./invoices-EevPdcEa.js";var n=e();function r({invoice:e,tenants:r=[]}){return(0,n.jsx)(t,{mode:`edit`,invoice:e,tenants:r})}r.layout=e=>({breadcrumbs:[{title:`Invoices`,href:`/invoices`},{title:e.invoice?.invoice_number??`Invoice`,href:`/invoices/edit`}]});export{r as default};
