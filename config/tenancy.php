@@ -21,6 +21,8 @@ return [
         'localhost',
         'admin.127.0.0.1',
         'admin.localhost',
+        'edupulse.co.ke',
+        'admin.edupulse.co.ke',
     ],
 
     /**
