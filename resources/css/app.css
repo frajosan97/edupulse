@@ -1,0 +1,225 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+
+    --radius-lg: var(--radius);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-sm: calc(var(--radius) - 4px);
+
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+    /* Surfaces */
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.23 0.033 264);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.23 0.033 264);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.23 0.033 264);
+
+    /* Brand */
+    --primary: oklch(0.52 0.145 245);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.72 0.12 235);
+    --secondary-foreground: oklch(0.23 0.033 264);
+    --accent: oklch(0.44 0.13 245);
+    --accent-foreground: oklch(0.985 0 0);
+    --accent-hover: oklch(0.37 0.11 245);
+
+    /* Neutrals */
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.52 0.015 240);
+    --destructive: oklch(0.577 0.245 27.325);
+    --destructive-foreground: oklch(0.985 0 0);
+
+    /* Borders */
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.52 0.145 245);
+
+    /* Charts */
+    --chart-1: oklch(0.52 0.145 245);
+    --chart-2: oklch(0.72 0.12 235);
+    --chart-3: oklch(0.44 0.13 245);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.769 0.188 70.08);
+
+    --radius: 0.625rem;
+
+    /* Sidebar */
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.23 0.033 264);
+    --sidebar-primary: oklch(0.52 0.145 245);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.97 0 0);
+    --sidebar-accent-foreground: oklch(0.44 0.13 245);
+    --sidebar-border: oklch(0.922 0 0);
+    --sidebar-ring: oklch(0.52 0.145 245);
+
+    /* Decorative dot patterns (used via inline style backgroundImage) */
+    --dot-color: rgba(11, 111, 184, 0.07);
+    --dot-color-strong: rgba(11, 111, 184, 0.18);
+}
+
+.dark {
+    /* Surfaces */
+    --background: oklch(0.129 0.042 264.695);
+    --foreground: oklch(0.984 0.003 247.858);
+    --card: oklch(0.208 0.042 265.755);
+    --card-foreground: oklch(0.984 0.003 247.858);
+    --popover: oklch(0.208 0.042 265.755);
+    --popover-foreground: oklch(0.984 0.003 247.858);
+
+    /* Brand */
+    --primary: oklch(0.72 0.12 235);
+    --primary-foreground: oklch(0.129 0.042 264.695);
+    --secondary: oklch(0.52 0.145 245);
+    --secondary-foreground: oklch(0.984 0.003 247.858);
+    --accent: oklch(0.62 0.13 240);
+    --accent-foreground: oklch(0.984 0.003 247.858);
+    --accent-hover: oklch(0.72 0.12 235);
+
+    /* Neutrals */
+    --muted: oklch(0.279 0.041 260.031);
+    --muted-foreground: oklch(0.704 0.04 256.788);
+    --destructive: oklch(0.577 0.245 27.325);
+    --destructive-foreground: oklch(0.984 0.003 247.858);
+
+    /* Borders */
+    --border: oklch(0.372 0.044 257.287);
+    --input: oklch(0.372 0.044 257.287);
+    --ring: oklch(0.72 0.12 235);
+
+    /* Charts */
+    --chart-1: oklch(0.72 0.12 235);
+    --chart-2: oklch(0.52 0.145 245);
+    --chart-3: oklch(0.62 0.13 240);
+    --chart-4: oklch(0.627 0.265 303.9);
+    --chart-5: oklch(0.645 0.246 16.439);
+
+    /* Sidebar */
+    --sidebar: oklch(0.208 0.042 265.755);
+    --sidebar-foreground: oklch(0.984 0.003 247.858);
+    --sidebar-primary: oklch(0.72 0.12 235);
+    --sidebar-primary-foreground: oklch(0.129 0.042 264.695);
+    --sidebar-accent: oklch(0.279 0.041 260.031);
+    --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
+    --sidebar-border: oklch(0.372 0.044 257.287);
+    --sidebar-ring: oklch(0.72 0.12 235);
+
+    /* Decorative dot patterns — brighter for dark surfaces */
+    --dot-color: rgba(69, 176, 229, 0.1);
+    --dot-color-strong: rgba(69, 176, 229, 0.22);
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    html {
+        color-scheme: light;
+    }
+
+    html.dark {
+        color-scheme: dark;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-family: var(--font-sans);
+    }
+}
+
+/* ===============================
+   Custom Scrollbar Styling
+   =============================== */
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border) transparent;
+}
+
+/* WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--border);
+    border-radius: var(--radius-sm);
+    border: 2px solid transparent;
+    background-clip: content-box;
+    transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--muted-foreground);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--primary);
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}

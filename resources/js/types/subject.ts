@@ -1,0 +1,30 @@
+export interface Subject {
+    id: number;
+    name: string;
+    code: string;
+    short_name: string | null;
+    description: string | null;
+    curriculum_id: number | null;
+    pathway_id: number | null;
+    department_id: number | null;
+    grading_system_id: number | null;
+    curriculum?: { id: number; name: string; code: string } | null;
+    pathway?: { id: number; name: string; code: string } | null;
+    department?: { id: number; name: string; code: string } | null;
+    type: "core" | "elective" | "optional" | "extracurricular";
+    type_label: string;
+    curriculum_type: "cbe" | "844" | "both";
+    curriculum_type_label: string;
+    has_theory: boolean;
+    has_practical: boolean;
+    theory_hours: number;
+    practical_hours: number;
+    passing_score: string | number;
+    max_score: string | number;
+    theory_weightage: string | number;
+    practical_weightage: string | number;
+    is_active: boolean;
+    teachers_count?: number;
+    created_at: string;
+    deleted_at: string | null;
+}
