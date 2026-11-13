@@ -54,6 +54,14 @@ class TenantService
             event(new TenantCreated($tenant));
         }
 
+        // Update database name
+        if (config('app.env') === 'production') {
+            $tenant->update([
+                'tenancy_db_connection' => 'mysql',
+                'tenancy_db_name' => 'frajosan_' . $tenant->id,
+            ]);
+        }
+
         return $tenant->fresh(['domains', 'modules']) ?? $tenant;
     }
 
