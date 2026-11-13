@@ -16,7 +16,7 @@ class TenantIdGenerator implements UniqueIdentifierGenerator
             preg_replace('/[^a-z0-9]/i', '', $name)
         );
 
-        $prefix = substr($name, 0, 4);
+        $prefix = substr($name, 0, 8);
 
         do {
             $id = $prefix . '_' . Str::lower(Str::random(4));
