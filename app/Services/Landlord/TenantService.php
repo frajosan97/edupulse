@@ -58,7 +58,7 @@ class TenantService
         if (config('app.env') === 'production') {
             $tenant->update([
                 'tenancy_db_connection' => 'mysql',
-                'tenancy_db_name' => 'frajosan_' . $tenant->id,
+                'tenancy_db_name' => 'frajosan_tenant_' . $tenant->id,
             ]);
         }
 
